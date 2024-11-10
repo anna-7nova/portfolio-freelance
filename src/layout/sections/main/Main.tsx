@@ -18,7 +18,7 @@ export const Main = () => {
     );
 }
 
-const StyledMain = styled.div`
+const StyledMain = styled.main`
 height: 70vh;
 background-color: #ccb4dd;
 `
