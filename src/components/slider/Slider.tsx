@@ -28,13 +28,16 @@ align-items: center;
 `
 const Slide = styled.div`
 text-align: center;
+div {
+padding: 15px 0 55px;
+}
 `
 const Pagination = styled.div`
 span {
 display: inline-block;
-height: 10px;
+height: 7px;
 width: 10px;
 background-color: #2f0e0e;
-margin: 5px;
+margin: 0 5px;
 }
 `
