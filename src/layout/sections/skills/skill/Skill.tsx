@@ -30,7 +30,7 @@ width: 380px;
 padding: 62px 20px 40px 20px;
 `
 
-const StyledIcon = styled.div`
+export const StyledIcon = styled.div`
 position: relative;
 z-index:0;
 

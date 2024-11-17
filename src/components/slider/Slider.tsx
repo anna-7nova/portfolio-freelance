@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { theme } from '../../styles/Theme';
 
 export const Slider = () => {
     return (
@@ -12,7 +13,7 @@ export const Slider = () => {
             </div>
             <Pagination>
                 <span> </span>
-                <span> </span>
+                <span className='active'> </span>
                 <span> </span>
             </Pagination>
         </StyledSlider>
@@ -20,7 +21,6 @@ export const Slider = () => {
 }
 
 const StyledSlider = styled.div`
-border: 1px solid grey;
 max-width: 600px;
 display: flex;
 flex-direction: column;
@@ -28,16 +28,39 @@ align-items: center;
 `
 const Slide = styled.div`
 text-align: center;
+
+p{
+max-width: 500px;
+
+font-weight: 400;
+font-size: 14px;
+}
+
 div {
-padding: 15px 0 55px;
+padding: 15px 0 35px;
+
+font-family: "Josefin Sans", sans-serif;
+font-weight: 600;
+font-size: 16px;
+letter-spacing: 0.06em;
+text-transform: uppercase;
 }
 `
 const Pagination = styled.div`
 span {
 display: inline-block;
+border-radius: 3.5px;
+width: 7px;
 height: 7px;
-width: 10px;
-background-color: #2f0e0e;
-margin: 0 5px;
+background-color: rgba(255, 255, 255, 0.5);
+
+&+span {
+margin-left: 5px;
+}
+
+&.active {
+width: 20px;
+background-color: ${theme.colors.accent};
+}
 }
 `

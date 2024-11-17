@@ -32,6 +32,7 @@ list-style: none;
 button {
 background-color: unset;
 border: unset;
+color: ${theme.colors.font};
 }
 
 section {
