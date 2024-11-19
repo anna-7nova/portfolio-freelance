@@ -54,14 +54,8 @@ const SkillTitle = styled.h3`
 display: inline-clock;
 padding: 70px 0 15px 0;
 
-font-family: "Josefin Sans", sans-serif;
-font-weight: 700;
-font-size: 16px;
-letter-spacing: 0.06em;
 text-transform: uppercase;
 `
 const SkillText = styled.p`
-font-weight: 400;
-font-size: 14px;
 text-align: center;
 `

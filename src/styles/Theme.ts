@@ -6,6 +6,7 @@ export const theme = {
         iconBg: "rgba(255, 255, 255, 0.1)",
         borderColor: "#4a4a4a",
         placeholderColor: "#495057",
+        thirdColor: "rgba(255, 255, 255, 0.5)",
 
         font: "#FFFFFF"
     }

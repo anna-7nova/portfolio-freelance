@@ -31,9 +31,6 @@ text-align: center;
 
 p{
 max-width: 500px;
-
-font-weight: 400;
-font-size: 14px;
 }
 
 div {
@@ -52,7 +49,7 @@ display: inline-block;
 border-radius: 3.5px;
 width: 7px;
 height: 7px;
-background-color: rgba(255, 255, 255, 0.5);
+background-color: ${theme.colors.thirdColor};
 
 &+span {
 margin-left: 5px;

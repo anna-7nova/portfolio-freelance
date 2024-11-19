@@ -22,4 +22,8 @@ height: 10px;
 width: 77px;
 background-color: ${theme.colors.accent};
 }
+
+&:hover {
+background-color: ${theme.colors.accent};
+}
 `
