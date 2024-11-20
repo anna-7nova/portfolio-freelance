@@ -3,7 +3,9 @@ import { theme } from '../styles/Theme';
 
 export const Button = styled.button`
 position: relative;
-padding: 10px 57px;
+z-index: 0;
+width: 170px;
+height: 32px;
 
 font-weight: 400;
 font-size: 14px;
@@ -15,6 +17,7 @@ position: absolute;
 bottom: 0;
 left: 50%;
 transform: translateX(-50%);
+z-index: -1;
 
 content: "";
 display: inline-block;

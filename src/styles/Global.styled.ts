@@ -35,6 +35,7 @@ button {
 background-color: unset;
 border: unset;
 color: ${theme.colors.font};
+cursor: pointer;
 }
 
 section {
