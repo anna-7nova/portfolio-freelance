@@ -9,5 +9,9 @@ export const theme = {
         thirdColor: "rgba(255, 255, 255, 0.5)",
 
         font: "#FFFFFF"
+    },
+    media: {
+        tablet: "screen and (max-width: 768px)",
+        mobile: "screen and (max-width: 576px)",
     }
 }
