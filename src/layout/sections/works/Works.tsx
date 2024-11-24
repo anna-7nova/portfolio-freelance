@@ -16,7 +16,7 @@ export const Works = () => {
             <Container>
                 <StyledSectionTitle>My Works</StyledSectionTitle>
                 <TabMenu menuItems={worksItems} />
-                <FlexWrapper justify='space-between' align='flex-start'>
+                <FlexWrapper justify='space-between' align='flex-start' wrap='wrap'>
                     <Project srcImage={projectOne} title="Social network" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit." />
                     <Project srcImage={projectTwo} title="Timer" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim" />
                 </FlexWrapper>
