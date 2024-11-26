@@ -28,8 +28,9 @@ export const Project = (props: ProjectPropsType) => {
 }
 
 const StyledComponent = styled.div`
-    max-width: 540px;
     background-color: ${theme.colors.secondaryBg};
+    width: 330px;
+    flex-grow: 1;
 
     h3{
         text-transform: capitalize;
@@ -45,6 +46,10 @@ const StyledComponent = styled.div`
         margin-left: 20px;
         }
     } 
+
+    @media ${theme.media.desktop} {
+        max-width: 540px;
+    }
 `
 
 const Description = styled.div`
@@ -88,9 +93,20 @@ const ImageWrapper = styled.div`
             opacity: 1;
         }
     }
+
+    @media ${theme.media.tablet} {
+        &::before {
+            opacity: 1;
+        }
+        ${Button} {
+            opacity: 1;
+        }
+    }
 `
 
 const Image = styled.img`
+    width: 100%;
+    height: 260px;
     object-fit: cover;
 `
 
