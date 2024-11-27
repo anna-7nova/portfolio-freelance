@@ -32,6 +32,14 @@ const StyledComponent = styled.div`
     width: 330px;
     flex-grow: 1;
 
+    @media ${theme.media.desktop} {
+        max-width: 540px;
+    }
+`
+
+const Description = styled.div`
+    padding: 25px 20px 35px;
+
     h3{
         text-transform: capitalize;
     }
@@ -46,14 +54,6 @@ const StyledComponent = styled.div`
         margin-left: 20px;
         }
     } 
-
-    @media ${theme.media.desktop} {
-        max-width: 540px;
-    }
-`
-
-const Description = styled.div`
-    padding: 25px 20px;
 `
 
 const ImageWrapper = styled.div`

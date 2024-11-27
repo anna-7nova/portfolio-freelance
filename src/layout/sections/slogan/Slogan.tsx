@@ -24,4 +24,8 @@ min-height: 20vh;
 display: flex;
 flex-direction: column;
 align-items: center;
+
+${StyledSectionTitle} {
+    margin-bottom: 72px; 
+}
 `

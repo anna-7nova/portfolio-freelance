@@ -19,6 +19,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
     color: ${theme.colors.font};
     line-height: 1.2;
+
+    min-width: 360px;
 }
 
 a {
@@ -64,5 +66,6 @@ letter-spacing: 0.06em;
 p{
 font-weight: 400;
 font-size: 14px;
+line-height: 1.5;
 }
 `;

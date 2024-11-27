@@ -26,6 +26,6 @@ export const Testimony = () => {
 
 const StyledTestimony = styled.section`
 ${StyledIcon} {
-margin: 32px 0 72px;
+margin: 32px 0 65px;
 }
 `

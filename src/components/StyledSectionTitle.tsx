@@ -12,7 +12,7 @@ letter-spacing: 0.14em;
 
 &::before {
 position: absolute;
-bottom: -30px;
+bottom: -25px;
 left: 50%;
 transform: translate(-50%);
 

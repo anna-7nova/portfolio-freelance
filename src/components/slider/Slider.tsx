@@ -34,7 +34,7 @@ max-width: 500px;
 }
 
 div {
-padding: 15px 0 35px;
+margin: 22px 0 42px;
 
 font-family: "Josefin Sans", sans-serif;
 font-weight: 600;
@@ -44,6 +44,7 @@ text-transform: uppercase;
 }
 `
 const Pagination = styled.div`
+line-height: 0; // to remove unnessecary space 
 span {
 display: inline-block;
 border-radius: 3.5px;

@@ -34,14 +34,14 @@ display: flex;
 const PhotoWrapper = styled.div`
 position: relative;
 z-index: 0;
-margin: 65px 35px 0 0;
+top: 5px;
 
 &::before {
 content: "";
 display: inline-block;
 width: 360px;
 height: 470px;
-border: 5px solid ${theme.colors.accent};
+outline: 5px solid ${theme.colors.accent};
 
 position: absolute;
 top: -24px;
@@ -54,6 +54,10 @@ z-index: -1;
     top: -20px;
     left: 17px;
 }
+}
+
+@media ${theme.media.mobile} {
+    margin: 65px 35px 0 0;
 }
 `
 
@@ -74,7 +78,7 @@ font-size: 14px;
 
 const BigText = styled.h2`
 ${font({fontFamily:'"Josefin Sans", sans-serif', fontWeight: 700, Fmax: 50, Fmin: 36,})}
-letter-spacing: 0.05em;
+letter-spacing: 0.1em;
 margin: 10px 0;
 
 span {
@@ -90,7 +94,7 @@ white-space: nowrap;
     background-color: ${theme.colors.accent};
 
     position: absolute;
-    bottom: 0;
+    bottom: -6px;
     z-index: -1;
     }
 }
