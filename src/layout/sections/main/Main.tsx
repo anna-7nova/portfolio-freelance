@@ -57,7 +57,7 @@ z-index: -1;
 }
 
 @media ${theme.media.mobile} {
-    margin: 65px 35px 0 0;
+    margin: 10px 35px 0 0;
 }
 `
 

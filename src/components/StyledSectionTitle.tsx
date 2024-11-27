@@ -23,11 +23,11 @@ width: 55px;
 background-color: ${theme.colors.accent};
 
 @media ${theme.media.mobile} {
-    bottom: -27px; 
+    bottom: -20px; 
 }
 }
 
 @media ${theme.media.mobile} {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 `

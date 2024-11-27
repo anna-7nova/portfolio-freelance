@@ -27,5 +27,8 @@ export const Testimony = () => {
 const StyledTestimony = styled.section`
 ${StyledIcon} {
 margin: 32px 0 65px;
+
+@media ${theme.media.mobile} {
+    margin: 65px 0 65px;
 }
 `

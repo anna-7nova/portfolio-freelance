@@ -28,4 +28,8 @@ const StyledMenu = styled.nav`
         border: 1px solid blue;
         margin: 0 auto 40px;
     }
+
+    @media ${theme.media.mobile} {
+        padding: 33px 0 5px;
+    }
 `

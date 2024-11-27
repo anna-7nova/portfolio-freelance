@@ -30,4 +30,5 @@ z-index: 0;
     transform: translateX(-50%);
     z-index: -1;
 }
+}
 `

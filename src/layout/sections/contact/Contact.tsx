@@ -37,6 +37,10 @@ textarea {
 min-height: 155px;
 resize: none;
 }
+
+@media ${theme.media.mobile} {
+    padding-top: 30px;
+}
 `
 const Field = styled.input`
 width: 100%;

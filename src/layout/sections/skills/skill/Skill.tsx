@@ -57,7 +57,7 @@ background-color: ${theme.colors.iconBg};
 
 const SkillTitle = styled.h3`
 display: inline-clock;
-padding: 70px 0 15px 0;
+padding: 65px 0 14px 0;
 
 text-transform: uppercase;
 `
