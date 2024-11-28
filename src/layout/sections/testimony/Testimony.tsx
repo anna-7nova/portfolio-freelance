@@ -6,17 +6,17 @@ import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Slider } from '../../../components/slider/Slider';
 import { Container } from '../../../components/Container';
 import { theme } from '../../../styles/Theme';
-import { StyledIcon } from '../skills/skill/Skill';
+import {S} from '../../sections/skills/Skills_Styles'
 
-export const Testimony = () => {
+export const Testimony: React.FC = () => {
     return (
         <StyledTestimony>
             <Container>
                 <StyledSectionTitle>Testimony</StyledSectionTitle>
                 <FlexWrapper align="center" direction="column">
-                    <StyledIcon>
+                    <S.StyledIcon>
                         <Icon iconId="quote" />
-                    </StyledIcon>
+                    </S.StyledIcon>
                     <Slider />
                 </FlexWrapper>
             </Container>
@@ -25,10 +25,11 @@ export const Testimony = () => {
 }
 
 const StyledTestimony = styled.section`
-${StyledIcon} {
+${S.StyledIcon} {
 margin: 32px 0 65px;
 
 @media ${theme.media.mobile} {
     margin: 65px 0 65px;
+}
 }
 `

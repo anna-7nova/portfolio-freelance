@@ -1,11 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Link } from '../../../../components/Link';
-import { theme } from '../../../../styles/Theme';
+import {S} from '../Works_Styles'
 
-export const TabMenu = (props: { menuItems: Array<string> }) => {
+export const TabMenu: React.FC<{ menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
     return (
-        <StyledMenu>
+        <S.StyledMenu>
             <ul>
                 {props.menuItems.map((item: string, index: number) => {
                     return (
@@ -15,21 +14,7 @@ export const TabMenu = (props: { menuItems: Array<string> }) => {
                     )
                 })}
             </ul>
-        </StyledMenu>
+        </S.StyledMenu>
     );
 };
 
-const StyledMenu = styled.nav`
-    ul{
-        display: flex;
-        justify-content: space-between;
-        max-width: 352px;
-        width: 100%;
-        border: 1px solid blue;
-        margin: 0 auto 40px;
-    }
-
-    @media ${theme.media.mobile} {
-        padding: 33px 0 5px;
-    }
-`
