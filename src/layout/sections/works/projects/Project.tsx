@@ -19,7 +19,7 @@ export const Project: React.FC<ProjectPropsType> = (props: ProjectPropsType) => 
             <S.Description>
                 <h3>{props.title}</h3>
                 <p>{props.text}</p>
-                <Link>demo</Link>
+                <Link active>demo</Link>
                 <Link>Code</Link>
             </S.Description>
         </S.StyledComponent>

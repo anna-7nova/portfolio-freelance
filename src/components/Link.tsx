@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { theme } from "../styles/Theme";
 
-export const Link = styled.a`
+export const Link = styled.a<{active?: boolean}>`
 font-weight: 400;
 font-size: 14px;
 letter-spacing: 0.07em;
@@ -15,6 +15,7 @@ z-index: 0;
     &::before {
     opacity: 1;
     }
+}
 
 &::before {
     content: "";
@@ -22,13 +23,16 @@ z-index: 0;
     height: 10px;
     width: 100%;
     background-color: ${theme.colors.accent};
-    // opacity: 0; //after use like a separate component don't work
+    opacity: 0; 
 
     position: absolute;
     bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
-}
+
+    ${props => props.active && css<{active?: boolean}>`
+    opacity: 1;
+    `}
 }
 `
